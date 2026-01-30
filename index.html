@@ -271,6 +271,130 @@
                 max-width: 100%;
             }
         }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .infographic {
+                padding: 25px 20px;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .subtitle {
+                font-size: 0.95em;
+            }
+
+            .header::after {
+                width: 80px;
+                height: 3px;
+                bottom: -15px;
+            }
+
+            .header {
+                margin-bottom: 20px;
+            }
+
+            .scale-container {
+                margin-top: 20px;
+            }
+
+            .stage {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin-bottom: 15px;
+                padding: 20px 15px;
+                border-left: 4px solid var(--stage-color);
+            }
+
+            .stage-number {
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 12px;
+            }
+
+            .number-circle {
+                width: 55px;
+                height: 55px;
+                font-size: 1.6em;
+            }
+
+            .stage-label {
+                margin-top: 0;
+                font-size: 0.75em;
+                align-self: center;
+            }
+
+            .stage-title {
+                font-size: 1.1em;
+                margin-bottom: 6px;
+            }
+
+            .stage-description {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+
+            .severity-bar {
+                height: 30px;
+                border-radius: 15px;
+                margin-top: 20px;
+            }
+
+            .severity-bar::before,
+            .severity-bar::after {
+                font-size: 0.75em;
+            }
+
+            .footer {
+                margin-top: 20px;
+                padding: 15px;
+            }
+
+            .citation {
+                font-size: 0.75em;
+                margin-bottom: 6px;
+            }
+
+            .note {
+                font-size: 0.7em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .subtitle {
+                font-size: 0.85em;
+            }
+
+            .number-circle {
+                width: 50px;
+                height: 50px;
+                font-size: 1.4em;
+            }
+
+            .stage-title {
+                font-size: 1em;
+            }
+
+            .stage-description {
+                font-size: 0.85em;
+            }
+
+            .severity-bar::before,
+            .severity-bar::after {
+                font-size: 0.65em;
+                padding: 0 8px;
+            }
+        }
     </style>
 </head>
 <body>
